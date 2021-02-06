@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
     --primary-orange : #f9ab00 ;
@@ -8,46 +9,277 @@
 body{
     font-family: "Roboto Condesed" sans-serif ;
 }
-
-
+html {
+    scroll-behavior: smooth;
+  }
 .websiteName {
 background-color: blueviolet;
 }
-.list{
-    float: right;
-}
-.list ul {
-    display: flex;
-    list-style: none;
 
-}
 
 /*---- menu link ------- */
 
-nav a.nav-link  {
-    font-weight: 500 ;
-    letter-spacing: 0.0375rem;
-    cursor: pointer;
+.list{
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    z-index: 1;
+    float: left;
+    
+
 }
 
-nav ul li {
+.list ul {
+    top: 0;
+    display: flex;
+    list-style: none;
+}
+.list ul li{
+    margin: 15px;
+}
+.list ul li a{
+   color: white;
+   font-size: 13px;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.list ul li a:hover{
+    color: #f9ab00;
+ }
+
+/*-----------header--------------*/
+
+.header-wrapper{
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background: url(/src/component/backgroundimg.jpg) no-repeat;
+}
+.main-info {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    font-family: "Roboto Condesed" sans-serif;
+    z-index: 1;
+}
+.main-info h1{
+    top: 30px;
+    color: white;
+    font-size: 80px;
+    font-family: "Pacifico";
+}
+.main-info p{
+    color: white;
+    
+}
+.Header-btn{
+    background: transparent;
+    border:  2px solid ;
+   text-transform: uppercase;
+    padding: 0.525rem 0.75rem 0.75rem 0.75rem;
+    color: white;
+    margin: 1rem ;
+}
+
+.Header-btn:hover {
+    text-decoration: none;
+    background-color: #f9ab00;
+    color: #000;
+    transition: .2s;
+    font-weight: bold ;
+    border: none;
+    font-size: 15px;
+}
+
+/* ------------ Footer ---------------*/
+.icons{
+    padding: 17px;
+}
+
+.hello {
+    margin: 20px;
+}
+.move-upper{
+    position: relative;
+}
+/*-----------ABout me -----------------*/
+.about-text h1{
+ padding: 35px;
+ font-size: 60px;
+ color: #f9ab00;
+}
+.about-text img{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    padding: 5px;
+}
+.about-text p{
+    padding: 22px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.about-icons{
+    margin: 10px;
+}
+
+
+/*------------contact ---------------*/
+#contact {
+background-color: #000;
+padding: 20px;
+}
+.heading h1{
+    color: white;
     text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-top: 50px;
 }
-.navbar-nav > li > a {
-    margin-right: 0.75rem;
-    margin-left: 00.75rem;
-color: #fff !important;
-border-top: 0.1875rem solid var(--primary-dark);
+.heading-message p {
+  color: rgb(122, 122, 122);
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
 }
-.navbar-brand {
-    font-weight: bolder;
-color: #fff !important;
+.heading-message p span{
+    margin: 7px;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
-    border-top: 0.1875rem solid var(--primary-orange );
+.form label{
+    font-size: 16px;
+    font-weight: bold;
+   margin: 13px;
+   color: #EBEEEE;
+	display: inline-block;
+	float: left;
+   width: 19%;
+    
 }
-.navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid var(--primary-orange);
+.form span {
+    color: cyan;
+}
+input,textarea,select{
+    padding: 12px 22px;
+	color: #eee;
+	background: #373233;
+    border: 0;
+   font-size: 15px;
+   line-height: 2px;
+   width: 75%;
+}
+input:focus , textarea:focus , select:focus{
+    color: #fff;
+    background-color: #11ABB0;
+    border: 0;
+}
+.input {
+    padding: 18px;
+    margin-top: 13px;
+}
+.submit{
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	color:#fff;
+   background: #0D0D0D;
+	border: none;
+   cursor: pointer;
+   height: 45px;
+   width: 160px;
+   font-size: 20px;
+   display: inline-block;
+    border-radius: 3px;
+    margin-left: 296%;
+}
+.submit:hover{
+    color: #0D0D0D;
+	background: #fff;
+}
+.aside{
+    padding-top: 25px;
+}
+.aside-con h4 {
+    color: aqua;
+}
+.address{
+    color: #ffd700;
+}
+
+@media (max-width:915px) {
+.submit{
+    margin-left: 85px;
+}
+.form label {
+    font-size: 11px;
+    width: 19%;
+}
+input,textarea {
+    font-size: 15px;
+    width: 55%;
+}
+.input {
+    padding: 1px;
+    margin-top: 7px;
+}
+
+
+}
+
+/*--------------project-------------*/
+.card{
+    background: white; 
+    border: .0625rem solid #eee;
+    border-radius: .5rem;
    
+    cursor: pointer;
+ 
 }
+.card:hover{
+    background: white;
+    box-shadow: 0 0.625rem 0.875rem -0.3125rem #e0e0e0;
+    
+}
+.space{
+margin:3rem;  
+}
+.space1{
+    margin: 3rem;
+}
+.heading {
+    color: #f9ab00;
+    font-size: 60px;
+}
+  @media (max-width:468px){
+    .space{
+        margin-top: 1rem ;
+        margin:2rem;  
+        }
+        .space1{
+            margin: 2rem;
+        }
+    .myimg img{
+      height:66px;
+      width:66px;
+    }
+    .colu h1 {
+      font-size:13px;
+    }
+  }
+
+  /*-----------------skills -----------------*/
