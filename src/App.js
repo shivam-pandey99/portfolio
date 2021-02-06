@@ -1,26 +1,24 @@
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import Navbar from './component/Navbar'
+import Header from './component/header'
+import About from "./component/About";
+import Contact from "./component/contact";
+import Footer from "./component/footer";
+import Project from './component/projects'
+import Skills from './component/skill';
 function App() {
 return (
-<div className="App">
-  <div>
-  <div className="websiteName">
-  <h1>Shivam Pandey</h1>
-  <div className="list">
-    <ul>
-      <li>home</li>
-      <li>about</li>
-      <li>projects</li>
-      <li>skills</li>
-      <li>social-Media</li>
-      <li>contact</li>
-    </ul>
-   </div>
-  </div>
- </div>
-</div>
+    <> 
+<Navbar/>
+<Header/>
+<About/>
+<Project/>
+<Skills/>
+<Contact/>
+<Footer />
+    </>
 );
 }
 
