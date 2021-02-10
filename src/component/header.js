@@ -12,11 +12,21 @@ render() {
               </h1>
                <p color="white">Mern-stack Develpoer</p> 
                <div className="header-icons">
-                   <FaGithub className="about-icons" color="white" size="2em"/>
-    <FaInstagram className="about-icons"  color="pink" size="2em"/>
-    <FaLinkedin className="about-icons"  color="blue" size="2em"/>
+               <a href="https://github.com/shivam-pandey99">
+                       <FaGithub className="about-icons" color="white" size="2em"/>
+                </a> 
+                  <a href="https://www.instagram.com/shivampandey__07/">
+                    <FaInstagram className="about-icons"  color="pink" size="2em"/>
+                </a>  
+                <a href="https://www.linkedin.com/in/shivammpandey/">
+                <FaLinkedin className="about-icons"  color="blue" size="2em"/>
+                </a>        
+    
    </div>
-    <button href="#contact" className="Header-btn">Contact Me</button><br/><br/><br/> 
+   <a href="#contact">
+    <button className="Header-btn">Contact Me</button>
+    </a>
+    <br/><br/><br/> 
     <p className="scrolldown">
     <a className="smoothscroll" href="#about">
 < IoIosArrowDropdownCircle color="white" size="3rem"/>

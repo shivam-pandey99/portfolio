@@ -15,10 +15,16 @@ return (
         completed my schooling in 2017.<br/>
         Graduated in Bach. of computer Application(2020)
         </p>
-    <FaGithub className="about-icons" color="black" size="2em"/>
-    <FaInstagram className="about-icons"  color="pink" size="2em"/>
-    <FaLinkedin className="about-icons"  color="blue" size="2em"/>
-    </div>
+        <a href="https://github.com/shivam-pandey99">
+        <FaGithub className="about-icons" color="black" size="2em"/>
+        </a> 
+        <a href="https://www.instagram.com/shivampandey__07/">
+        <FaInstagram className="about-icons"  color="pink" size="2em"/>
+        </a>  
+        <a href="https://www.linkedin.com/in/shivammpandey/">
+        <FaLinkedin className="about-icons"  color="blue" size="2em"/>
+        </a>   
+        </div>
 </div>
 );
 }

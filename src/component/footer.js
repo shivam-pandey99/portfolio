@@ -19,17 +19,21 @@ class Footer extends Component {
     </div>
 <div className="col-lg-10 mx-auto mb-14">
 <div className="icons">
-   <FaGithub className="hello" color="black" size="3em"/>
-    <FaInstagram className="hello" color="pink" size="3em"/>
-    <FaLinkedin className="hello" color="blue" size="3em"/>
+    <a href="https://github.com/shivam-pandey99">
+     <FaGithub className="hello" color="black" size="3rem"/>
+    </a> 
+    <a href="https://www.instagram.com/shivampandey__07/">
+    <FaInstagram className="hello"  color="pink" size="3rem"/>
+    </a>  
+    <a href="https://www.linkedin.com/in/shivammpandey/">
+    <FaLinkedin className="hello"  color="blue" size="3rem"/>
+    </a> 
+    <a href="#contact">   
     <SiGmail className="hello" color="red" size="3em"/>
-
-    </div>
-</div>
-            </footer>
-
-
-         );
+    </a>
+    </div></div>
+      </footer>
+  );
     }
 }
  
