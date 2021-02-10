@@ -6,7 +6,7 @@ import js  from "./js.png";
 import bootstrap from "./bootstrap.png";
 const CardToll= (props) =>{
     return (
- <div className="col-sm-2 col-10 space " style={{width:"auto"}}>
+ <div className="col-sm-2 col-4 justify-content-center align-item-center" style={{width:"55px"}}>
  
  <div className="colu">
         <div className="myimg">

@@ -13,10 +13,9 @@ class Footer extends Component {
         }}/>
         return ( 
 
+  
 <footer className="w-100  text-center  bg-warning">
-    <div className="move-upper">
-<IoIosArrowDropupCircle color="grey" size="4rem"/>
-    </div>
+    
 <div className="col-lg-10 mx-auto mb-14">
 <div className="icons">
     <a href="https://github.com/shivam-pandey99">
@@ -32,7 +31,7 @@ class Footer extends Component {
     <SiGmail className="hello" color="red" size="3em"/>
     </a>
     </div></div>
-      </footer>
+</footer>
   );
     }
 }

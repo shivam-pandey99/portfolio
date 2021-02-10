@@ -8,6 +8,9 @@ import Contact from "./component/contact";
 import Footer from "./component/footer";
 import Project from './component/projects'
 import Skills from './component/skill';
+import Totop from './component/Totop';
+
+
 function App() {
 return (
     <> 
@@ -17,6 +20,7 @@ return (
 <Project/>
 <Skills/>
 <Contact/>
+<Totop/>
 <Footer />
     </>
 );

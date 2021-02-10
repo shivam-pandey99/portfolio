@@ -79,7 +79,7 @@ const Contact = ({ data }) => {
             </label>
             <textarea
               cols="45"
-              rows="1"
+              rows="2"
               value={message}  
               id="contactMessage"
               name="contactMessage"

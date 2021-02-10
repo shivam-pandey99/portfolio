@@ -159,7 +159,30 @@ button {
     margin: 20px;
 }
 .move-upper{
-    position: relative;
+    float:right;
+    margin: 10px;
+    padding: 20px;
+    padding-right: 80px;
+    z-index: 1;
+}
+
+@media (max-width:915px){
+    .icons{
+        padding: 8px;
+    }
+    .hello {
+        margin: 10px;
+    }
+    .top{
+        size: 3rem;
+    }
+    .move-upper {
+        size: 1rem;
+        margin: 5px;
+        padding: 10px;
+        padding-right: 10px;
+
+    }
 }
 /*-----------ABout me -----------------*/
 .about-text h1{
@@ -173,6 +196,7 @@ button {
     border-radius: 300px;
     padding: 5px;
 }
+
 .about-text p{
     padding: 22px;
     font-size: 25px;
@@ -249,7 +273,7 @@ input:focus , textarea:focus , select:focus{
    font-size: 20px;
    display: inline-block;
     border-radius: 3px;
-    margin-left: 296%;
+    margin-left: 290%;
 }
 .submit:hover{
     color: #0D0D0D;
@@ -267,6 +291,9 @@ input:focus , textarea:focus , select:focus{
 
 @media (max-width:915px) {
 .submit{
+    height: 35px;
+   width: 100px;
+    font-size: 13px;
     margin-left: 85px;
 }
 .form label {
@@ -281,8 +308,22 @@ input,textarea {
     padding: 1px;
     margin-top: 7px;
 }
-
-
+.main-info h1{
+    font-size: 40px;
+}
+.about-text h1{
+    font-size: 38px;
+}
+.about-text img{
+    height: 250px;
+    width: 230px;
+}
+.about-text p{
+    font-size: 16px;
+}
+.my-5 h1 {
+    font-size: 46px;
+}
 }
 
 /*--------------project-------------*/
@@ -300,7 +341,7 @@ input,textarea {
     
 }
 .space{
-margin:3rem;  
+margin:2.8rem;  
 }
 .space1{
     margin: 3rem;
@@ -309,7 +350,18 @@ margin:3rem;
     color: #f9ab00;
     font-size: 60px;
 }
-  @media (max-width:468px){
+.myimg img{
+    height:93px;
+    width:93px;
+}
+
+.colu h1 {
+    font-size: 23px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 0;
+}
+  @media (max-width:960px){
     .space{
         margin-top: 1rem ;
         margin:2rem;  
@@ -318,12 +370,17 @@ margin:3rem;
             margin: 2rem;
         }
     .myimg img{
-      height:66px;
-      width:66px;
+      height:53px;
+      width:43px;
+    }
+    .colu {
+        width: 55px;
+        margin: 25px;  
     }
     .colu h1 {
-      font-size:13px;
+      font-size: 10px;
     }
   }
 
   /*-----------------skills -----------------*/
+
